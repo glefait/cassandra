@@ -477,7 +477,7 @@ For instance, one could insert into the table define in the previous section usi
                   }
               })
 
-To be valid, a UDT literal should only include fields defined by the type it is a literal of, but it can omit some field
+To be valid, a UDT literal should only include fields defined by the type it is a literal of, but it can omit some fields
 (in which case those will be ``null``).
 
 Altering a UDT
@@ -533,7 +533,7 @@ and can be used thusly::
 
 Unlike other "composed" types (collections and UDT), a tuple is always :ref:`frozen <frozen>` (without the need of the
 `frozen` keyword) and it is not possible to update only some elements of a tuple (without updating the whole tuple).
-Also, a tuple literal should always have the same number of value than declared in the type it is a tuple of (some of
+Also, a tuple literal should always have the same number of values than declared in the type it is a tuple of (some of
 those values can be null but they need to be explicitly declared as so).
 
 .. _custom-types:
@@ -541,7 +541,7 @@ those values can be null but they need to be explicitly declared as so).
 Custom Types
 ^^^^^^^^^^^^
 
-.. note:: Custom types exists mostly for backward compatiliby purposes and their usage is discouraged. Their usage is
+.. note:: Custom types exist mostly for backward compatiliby purposes and their usage is discouraged. Their usage is
    complex, not user friendly and the other provided types, particularly :ref:`user-defined types <udts>`, should almost
    always be enough.
 
